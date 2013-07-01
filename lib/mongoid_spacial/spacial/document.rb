@@ -16,6 +16,7 @@ module Mongoid
         # @param [Hash] options options for spacial_index
         def spacial_index name, *options
           self.spacial_fields_indexed << name
+          puts "here"
           index [[ name, ::Mongo::GEO2D ]], *options
         end
       end
