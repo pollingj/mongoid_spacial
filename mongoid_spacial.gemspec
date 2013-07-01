@@ -16,6 +16,6 @@ Gem::Specification.new do |gem|
   gem.version       = Mongoid::Spacial::VERSION
 
   gem.add_dependency("mongoid", ['>= 2.1.0'])
-  gem.add_dependency('activesupport', ["~> 3.0"])
+  gem.add_dependency('activesupport', [">= 3.0"])
 
 end
