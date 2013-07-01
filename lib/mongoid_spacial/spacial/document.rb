@@ -17,7 +17,7 @@ module Mongoid
         def spacial_index name, *options
           self.spacial_fields_indexed << name
           #index [[ name, ::Mongo::GEO2D ]], *options
-          index({ name, "2d"}, *options)
+          index({ name: "2d"}, *options)
         end
       end
 
